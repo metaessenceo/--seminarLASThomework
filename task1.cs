@@ -9,6 +9,13 @@ void recursiveNumberWriter(int number) {
     }
 }
 
+int getNumberFromUser() {
+    Console.WriteLine("Write a natural number:")
+    string input = Console.ReadLine();
+    int number = int.Parse(input);
+    return number;
+}
 
-int number = 5;
+
+int number = getNumberFromUser();
 writeSmallerNumbers(number);
